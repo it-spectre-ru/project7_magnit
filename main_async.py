@@ -94,7 +94,7 @@ async def collect_data(city_code='2398'):
             data
         )
             
-    return f'Файл {city}_{cur_time}.csv'
+    return f'{city}_{cur_time}.csv'
         
     
 async def main():
