@@ -13,6 +13,10 @@ async def start(message: types.Message):
 
   await message.answer('Select a city', reply_markup=keyboard)
 
+@dp.message_handler(Text(equals='Moscow'))
+async def moscow_city(message: types.Message):
+  await message.answer('Waiting...')
+
 
 if __name__ == '__main__':
   executor.start_polling(dp)
